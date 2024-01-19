@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+html {
+  font-family: 'Nunito', sans-serif;
+  border: 5px solid aliceblue;
+  
+}
+
+body {
+  background-color: black;
+  color: aliceblue;
+  background-image: url('../public/fondo1.jpg');
+}
+
+h1 {
+  text-shadow: 6px 8px 0 rgba(0, 0, 0, 0.382);
+}
+
+button {
+  cursor: pointer;
+  padding: 1rem 4rem;
+  color: rgb(117,126,130);
+  border-radius: 15px;
+  font-size: large;
+  border: 3px solid white;
+  background-color: rgba(240, 248, 255, 0.445);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.phrase {
+  
+  background-image: url('../public/rectangle1.svg'); /* Reemplaza 'ruta/de/tu/imagen.jpg' con la ruta correcta de tu imagen */
+  background-size: auto; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+
+   /* Otras propiedades de estilo según tus necesidades */
+  height: 259px; /* Altura del contenedor, ajusta según sea necesario */
+  width: 640px; /* Asegura que el contenedor ocupe todo el ancho disponible */
+  border: 1px solid white;
+  color: black;
+  overflow: visible;
+}
+
+.phrase p {
+  z-index: 1;
+}
+
