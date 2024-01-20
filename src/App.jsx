@@ -19,23 +19,20 @@ function App() {
   const bgStyle = {
     backgroundImage: `url('../public/fondo${bgApp}.jpg')`,
   }
-  
-  
-
-
+    
   return (
     <div className='Background' style={bgStyle}>
       
       <div className='container'>
 
-        <h1>Galletas de la fortuna</h1>
+        <h1>GALLETAS DE LA FORTUNA</h1>
         <div className='phrase'>
 
-          <p>
+          <div className='text'>
             <RandomPhrase
               quote={quote}
             />
-          </p>
+          </div>
 
         </div>
         <Btn

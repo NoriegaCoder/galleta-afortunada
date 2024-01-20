@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap');
 
 html {
   font-family: 'Nunito', sans-serif;
@@ -19,43 +20,61 @@ body {
   background-size: cover;
 }
 
-h1 {
-  text-shadow: 6px 8px 0 rgba(0, 0, 0, 0.382);
+.container h1 {
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.382);
+  font-weight: 800;
+  width: 300px;
+  text-align: center;
 }
 
 button {
   cursor: pointer;
-  padding: 1rem 4rem;
+  padding: .7rem 3rem;
   color: rgb(117,126,130);
   border-radius: 15px;
-  font-size: large;
+  font-weight: 600;
+  font-size: medium;
   border: 3px solid white;
   background-color: rgba(240, 248, 255, 0.445);
+  transition: transform .25s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: transform .25s;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  justify-items: center;
   align-items: center;
+  justify-content: center;
+  height: 75vh;
 }
 
 .phrase {
-  
-  background-image: url('../public/rectangle1.svg'); /* Reemplaza 'ruta/de/tu/imagen.jpg' con la ruta correcta de tu imagen */
-  background-size: auto; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
-  background-position: center; /* Centra la imagen en el contenedor */
-  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  background-image: url('../public/rectangle1.svg'); 
+  background-size: contain;
+  background-position: center; 
+  background-repeat: no-repeat; 
 
-   /* Otras propiedades de estilo según tus necesidades */
-  height: 259px; /* Altura del contenedor, ajusta según sea necesario */
-  width: 640px; /* Asegura que el contenedor ocupe todo el ancho disponible */
-  border: 1px solid white;
-  color: black;
+  height: 230px; 
+  width: 520px; 
+  color: rgb(24, 24, 24);
   overflow: visible;
+
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  line-height: 2.5;
+  
 }
 
-.phrase p {
-  z-index: 1;
+.text {
+  color: rgb(111,111,111);
+  font-size: large;
+  padding: 1rem;
+  line-height: 1;
+  text-align: center;
 }
 

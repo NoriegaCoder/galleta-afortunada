@@ -7,8 +7,10 @@ const Btn = ({setQuote, setBgApp}) => {
 
   
   const handleBtn = () =>{
+      const bgIndex = randomindex(bgArray)
       const sentence = randomindex(phrases);
         setQuote(sentence);
+        setBgApp(bgIndex);
     }
     
 
