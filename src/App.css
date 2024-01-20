@@ -3,13 +3,20 @@
 html {
   font-family: 'Nunito', sans-serif;
   border: 5px solid aliceblue;
+  overflow: hidden;
   
 }
 
 body {
-  background-color: black;
   color: aliceblue;
+}
+
+.Background {
+  min-height: 97vh;
   background-image: url('../public/fondo1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
