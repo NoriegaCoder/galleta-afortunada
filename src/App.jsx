@@ -1,25 +1,30 @@
 import './App.css'
 import RandomPhrase from "./components/RandomPhrase.jsx";
 import phrases from "./utils/phrases.json";
-import imgs from "./utils/imgurls.json"
 import randomindex from "./services/randomindex.js";
 import { useState } from "react";
 import Btn from './components/Btn.jsx';
+import bgArray from './utils/bgArray.json';
+
 
 
 function App() {
 
   const sentence = randomindex(phrases)
+  const bgIndex = randomindex(bgArray)
 
   const [quote, setQuote] = useState(sentence)
+  const [bgApp, setBgApp] = useState(bgIndex)
+
+  const bgStyle = {
+    backgroundImage: `url('../public/fondo${bgApp}.jpg')`,
+  }
   
-  const fondo = randomindex(imgs)
   
-  const [fondillo, setFondillo] = useState(fondo)
 
 
   return (
-    <div className='Background'>
+    <div className='Background' style={bgStyle}>
       
       <div className='container'>
 
@@ -35,6 +40,7 @@ function App() {
         </div>
         <Btn
           setQuote={setQuote}
+          setBgApp={setBgApp}
         />
       </div>
     </div>

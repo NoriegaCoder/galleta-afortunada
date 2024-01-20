@@ -1,12 +1,13 @@
 import React from 'react';
 import phrases from "../utils/phrases.json";
 import randomindex from "../services/randomindex.js";
+import bgArray from '../utils/bgArray.json';
 
-const Btn = ({setQuote}) => {
+const Btn = ({setQuote, setBgApp}) => {
 
-    const sentence = randomindex(phrases);
-    
-    const handleBtn = () =>{
+  
+  const handleBtn = () =>{
+      const sentence = randomindex(phrases);
         setQuote(sentence);
     }
     

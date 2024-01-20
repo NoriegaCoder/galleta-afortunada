@@ -13,7 +13,7 @@ body {
 
 .Background {
   min-height: 97vh;
-  background-image: url('../public/fondo1.jpg');
+  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
