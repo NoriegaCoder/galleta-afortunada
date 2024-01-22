@@ -17,7 +17,7 @@ function App() {
   const [bgApp, setBgApp] = useState(bgIndex)
 
   const bgStyle = {
-    backgroundImage: `url('./fondo${bgApp}.jpg')`,
+    backgroundImage: `url('../public/fondo${bgApp}.jpg')`,
   }
     
   return (
