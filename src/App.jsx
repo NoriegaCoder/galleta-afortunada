@@ -25,7 +25,7 @@ function App() {
       
       <div className='container'>
 
-        <h1>GALLETAS DE LA FORTUNA</h1>
+        <h1>GAALLETAS DE LA FORTUNA</h1>
         <div className='phrase'>
 
           <div className='text'>
